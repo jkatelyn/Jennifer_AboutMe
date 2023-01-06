@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: rgb(255, 255, 255);
+        }
+
+        .content {
+            max-width: 500px;
+            margin: auto;
+            background: rgb(0, 255, 200);
+            padding: 10px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content2 {
+            max-width: 500px;
+            margin: auto;
+            background: rgb(0, 255, 200);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo1">
+
+        <div class="content">
+            <h1>About Me</h1>
+            <img src="Image/photo_2023-01-06_10-31-31.jpg" alt="AM" style="width:50%;" style="height:50%;">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+            <script>
+                anime({
+                    targets: ".demo1",
+                    translateX: 250,
+                    rotate: 360,
+                    loop: true,
+                    easing: 'easeOutExpo',
+                    opacity: [0, 1], //start and end values
+                    delay: 500
+
+                });
+            </script>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="demo2">
+
+        <div class="content2">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+            <script>
+                anime({
+                    targets: ".demo2",
+                    translateX: 250,
+                    direction: 'alternate',
+                    loop: true,
+                    easing: 'spring(1, 80, 10, 0)'
+                })
+            </script>
+
+            <h3>Jennifer Katelyn</h3>
+            <h4>Web Designer</h4>
+            <p>My Name is Jennifer Katelyn and im a designer based in Singapore.</p>
+            <p>The style of my work is abstract + minimalist.</p>
+            <p>I pay alot of attention to aesthetics in design</p>
+            <p>I enjoy learning about the subtelities </p>
+            <p>and popularities of this field by working in this distinctive style.</p>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
